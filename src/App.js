@@ -1,7 +1,5 @@
 import RecipeBook from "./Recipe";
 
-//Base styling was used to help structure website for personal view. Style imported from "https://www.udemy.com/course/the-ultimate-react-course/?couponCode=JUST4U02223"
-
 //App displaying Header and RecipeBook component
 function App() {
 	return (

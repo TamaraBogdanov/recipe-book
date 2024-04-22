@@ -75,7 +75,7 @@ export default function RecipeBook() {
 	const [showFavorites, setShowFavorites] = useState(false);
 
 	// Function to filter recipes based on dietary restrictions
-	//Claude.ai used to assist with filter function structure.
+	//Claude.ai used to assist with filter function structure to help me understand how to structure the filters.
 	function filterRecipes(dietary) {
 		if (dietary.length === 0) {
 			//If dietary array is empty, display all recipies
@@ -177,7 +177,7 @@ export default function RecipeBook() {
 				{/*Displays dietary buttons that display filtered recipies containing specified dieraty requirements on click */}
 			</div>
 			{/*JSX rendering list of recipe components as well as a button for "favouriting" recipies.
-			Claude.ai used in assisting with map method and list rendering */}
+			Claude.ai used in assisting with map method and list rendering as i struggled to structure it on my own*/}
 			{filteredRecipes.map((recipe) => (
 				//uses map method to iterate over filteredRecipies array
 				//recipe represents each individual recipe object during each iteration of the map function
