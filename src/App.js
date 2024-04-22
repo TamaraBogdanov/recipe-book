@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import RecipeBook from "./Recipe";
 
+//Base styling was used to help structure website for personal view. Style imported from "https://www.udemy.com/course/the-ultimate-react-course/?couponCode=JUST4U02223"
+
+//App displaying Header and RecipeBook component
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="container">
+			<Header />
+			<RecipeBook />
+		</div>
+	);
+}
+
+//Header component
+function Header() {
+	return <h1 className="header"> 🍔 Burger Book 🍟</h1>;
 }
 
 export default App;
